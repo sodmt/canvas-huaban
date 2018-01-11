@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_518663_sbs2k1eqi5uq5mi.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_517179_t8gx3nyshyta9k9.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/Palette.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+<header>
+    <ul class="option">
+        <li id="newCanvas" class="iconfont">&#xe633;</li>
+        <li id="save" class="iconfont"><a href="">&#xe605;</a></li>
+        <li id="back" class="iconfont">&#xe623;</li>
+        <li id="clear" class="iconfont">&#xe62d;</li>
+    </ul>
+    <ul class="shape">
+        <li id="line" title="直线"><i class="iconfont">&#xe601;</i></li>
+        <li id="dash" title="虚线"><i class="iconfont">&#xe61c;</i></li>
+        <li id="pencil" title="铅笔"><i class="iconfont">&#xe600;</i></li>
+        <li id="circle" title="圆形"><i class="iconfont">&#xe622;</i></li>
+        <li id="rect" title="矩形"><i class="iconfont">&#xe60f;</i></li>
+        <li id="ploy" title="多边形"><i class="iconfont">&#xe603;</i></li>
+        <li id="ployJ" title="多角形"><i class="iconfont">&#xe60d;</i></li>
+        <li id="eraser" title="橡皮擦"><i class="iconfont">&#xe77c;</i></li>
+    </ul>
+    <ul class="style">
+        <li id="fill" class="styleBtn">填充</li>
+        <li id="stroke" class="styleBtn">边框</li>
+        <li>线宽</li>
+        <li>线型</li>
+        <li id="font" class="fontBtn styleBtn">文字</li>
+        <li><input type="color" id="fillStyle" class="colorstyle" value="#CCCCCC"></li>
+        <li><input type="color" id="strokeStyle" class="colorstyle" value="#CCCCCC"></li>
+        <li><input type="number" value="1"></li>
+        <li>
+            <select>
+                <option value="butt">默认</option>
+                <option value="round">圆型</option>
+                <option value="square">方形</option>
+            </select>
+        </li>
+        <li id="cilp" class="clipBtn styleBtn cilp">裁剪</li>
+    </ul>
+
+</header>
+<section>
+    <canvas width="1263" height="519"></canvas>
+    <div class="eraser"></div>
+    <div class="mask"></div>
+    <div class="clip">
+    </div>
+</section>
+</body>
+</html>
